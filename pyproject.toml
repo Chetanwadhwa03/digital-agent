@@ -1,0 +1,23 @@
+[project]
+name = "digialai-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Chetanwadhwa03", email = "chetanwadhwa03@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "ipython>=9.17.1",
+    "openai>=3.29.0",
+    "pypdf>=6.20.0",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+digialai-agent = "digialai_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
